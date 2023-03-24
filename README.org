@@ -1,0 +1,9 @@
+#+title: Readme
+* Objective
+Use LLMs for helping coding. Initital objective is to create an Emacs package so which talks with the OpenAI API.
+
+We can accomplish things like:
+1. Document code
+2. Explain the code
+3. Write tests for the code
+4. Optimize the code
