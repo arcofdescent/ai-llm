@@ -7,3 +7,16 @@ We can accomplish things like:
 2. Explain the code
 3. Write tests for the code
 4. Optimize the code
+* Example
+This code defines a emacs lisp function which gets selected text and opens it in a new buffer.
+#+begin_src emacs-lisp
+(defun ai-llm/get-selected-text ()
+  "Open selected text into a new buffer"
+  (interactive)
+  (setq str (buffer-substring (mark) (point)))
+  (setq buffer-name (generate-new-buffer "foo"))
+  (switch-to-buffer buffer-name)
+  (insert str))
+#+end_src
+
+The next step would be to send this text to a Python script which in turn sends it to OpenAI API and receives the response.
