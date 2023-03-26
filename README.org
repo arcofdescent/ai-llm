@@ -19,3 +19,5 @@ This code defines a emacs lisp function which gets selected text and opens it in
 #+end_src
 
 The next step would be to send this text to a Python script which in turn sends it to OpenAI API and receives the response.
+* Python script
+This receives text on standard input, sends it off to the OpenAI API and prints out the result.
