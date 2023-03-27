@@ -1,3 +1,4 @@
+*llm-for-dev*
 * Objective
 Use LLMs as an integral part of the software development process. Initital objective is to create an Emacs package which talks with the OpenAI API.
 
@@ -9,7 +10,7 @@ We can accomplish things like:
 * Example
 This code defines a emacs lisp function which gets selected text and opens it in a new buffer.
 #+begin_src emacs-lisp
-(defun ai-llm/get-selected-text ()
+(defun llm-for-dev/get-selected-text ()
   "Open selected text into a new buffer"
   (interactive)
   (setq str (buffer-substring (mark) (point)))
